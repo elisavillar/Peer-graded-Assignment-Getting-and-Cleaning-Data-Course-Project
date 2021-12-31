@@ -113,3 +113,4 @@ tidy_data <- activity_names %>%
   group_by(subject, activity) %>% 
   summarise_all(list(mean))
 
+write.table(tidy_data, "tidy_data.txt", row.name=FALSE)
